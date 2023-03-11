@@ -1,19 +1,27 @@
-body{
-    background-image:url(./images/background2.jpg);
-    background-size: cover;
+.page1 {
+    background-image: url(./images/background2.jpg);
+    background-size: 100% 100%;
     height: 100vh;
-    width: 100vw;
     background-repeat: no-repeat;
+
 }
-.margin{
+
+.marginnav {
     margin-left: 5rem;
     margin-right: 7rem;
 }
-.home-text{
+
+.home-text {
     padding-top: 14rem;
-    
 }
-.social a{
+
+.webkit {
+    font-size: 3rem;
+    opacity: 0.8;
+    -webkit-text-stroke: 0.2px white;
+}
+
+.social a {
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -25,25 +33,163 @@ body{
     margin-right: 22px;
     margin-bottom: 30px;
 }
-.social a:hover{
+
+.social a:hover {
     transform: scale(1.1);
     background-color: blue;
     transition: .5s;
 }
 
-.honav a:hover{
+.honav {
+    position: fixed;
+    top: 0;
+}
+
+.honav a:hover {
     transform: scale(1.1);
-    background-color: rgb(21, 21, 121);
+    /* background-color: rgb(21, 21, 121); */
+    color: grey !important;
     transition: .5s;
 }
-.btn{
-    display: inline-block;
-    width: 100px;
-    height: 50px;
-    font-weight: 500;
-}
-.btn a:hover{
+
+.honav li:hover {
     transform: scale(1.1);
-    background-color: rgb(21, 21, 121);
+    /* background-color: rgb(21, 21, 121); */
+    color: grey !important;
     transition: .5s;
+}
+
+.footer {
+    background-color: #00163F;
+    height: 5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 14rem;
+
+}
+
+.footer a {
+    color: white;
+}
+
+/*-------------------------------------------------------page1-------------------------------------------------------------*/
+/*-----------------------------------------------------page2--------------------------------------------------------*/
+.page2 {
+    background-color: #00163F;
+    background-size: 100% 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.skills h1 {
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.skill-list {
+    font-size: larger;
+    padding: 15px;
+    background-color: #eee;
+    color: #00163F;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+/*-----------------------------------------------------page2--------------------------------------------------------*/
+/*-----------------------------------------------------page3--------------------------------------------------------*/
+.page3 {
+    background-color: #00163F;
+    background-size: 100% 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.Qualifications h1 {
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.Qualifications-col {
+    font-size: larger;
+    background-color: #eee;
+    color: #00163F;
+    padding: 15px;
+    margin: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.Qualifications-col:hover {
+    transition: 3s;
+    transform: scale(1.1);
+}
+
+/*--------------------------------------------page3--------------------------------------------------------------------*/
+/*--------------------------------------------page4--------------------------------------------------------------------*/
+.page4 {
+    background-color: #00163F;
+    background-size: 100% 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.My-Project{
+    padding-top: 5rem;
+    text-align: center;
+}
+.container .card {
+    max-width: 300px;
+    height: 215px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover {
+    height: 450px;
+}
+
+.container .card .imgContainer {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    top: -50px;
+    left: 10px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container .card .imgContainer img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.container .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+@media (max-width: 330px) {
+    .container .card .imgContainer {
+        left: -2px;
+    }
 }

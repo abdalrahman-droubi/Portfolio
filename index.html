@@ -12,57 +12,180 @@
 </head>
 
 <body>
-    <!-- -----navbar---- -->
-    <nav class="navbar navbar-expand-lg navbar-light honav">
-        <!-- Container wrapper -->
-        <div class="container-fluid ">
-            <!-- Toggle button -->
-            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-                data-mdb-target="#navbarLeftAlignExample" aria-controls="navbarLeftAlignExample" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-            <!-- Collapsible wrapper -->
-            <div class="collapse navbar-collapse" id="navbarLeftAlignExample">
-                <!-- Left links -->
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item col-2 ">
-                        <img class=" w-75 h-75 d-inline-block rounded-4 "
-                            src="./images/abdalrahman-droubi-high-resolution-logo-white-on-transparent-background.png" alt="my logo">
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link active text-light fs-3 margin rounded-4 " aria-current="page"
-                            href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light fs-3 margin rounded-4 " href="#">About Me</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link text-light fs-3 margin rounded-4 " href="#">My Project</a>
-                    </li>
-                </ul>
-                <!-- Left links -->
+    <!-- ----------------------------------------page1---------------------------------------------------------------------------------->
+    <div class="page1" id="Home">
+        <!-- -----navbar---- -->
+        <nav class="navbar navbar-expand-lg navbar-light honav">
+            <!-- Container wrapper -->
+            <div class="container-fluid honav">
+                <!-- Toggle button -->
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarLeftAlignExample" aria-controls="navbarLeftAlignExample"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <!-- Collapsible wrapper -->
+                <div class="collapse navbar-collapse" id="navbarLeftAlignExample">
+                    <!-- Left links -->
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item col-2 pt-3">
+                            <img class=" w-75 h-75 d-inline-block rounded-4 "
+                                src="./images/abdalrahman-droubi-high-resolution-logo-white-on-transparent-background.png"
+                                alt="my logo">
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active text-light fs-3 marginnav rounded-4 " aria-current="page"
+                                href="#Home">Home</a>
+                        </li>
+                        <li class="dropdown nav-item ">
+                            <button class="btn  dropdown-toggle text-light fs-3 marginnav rounded-4 " type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                About Me
+                            </button>
+                            <ul class="dropdown-menu ">
+                                <li><a class="dropdown-item rounded-4" href="#Skills">Skills</a></li>
+                                <li><a class="dropdown-item rounded-4" href="#Qualifications">Qualifications</a></li>
+                                <li><a class="dropdown-item rounded-4" href="#">Experiences</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-light fs-3 marginnav rounded-4 " href="#My Project">My Project</a>
+                        </li>
+                    </ul>
+                    <!-- Left links -->
+                </div>
+                <!-- Collapsible wrapper -->
             </div>
-            <!-- Collapsible wrapper -->
+            <!-- Container wrapper -->
+        </nav>
+        <!-- -----navbar---- -->
+        <!--Home text ------ -->
+        <section class="container-fluid text-center home-text ">
+            <h4 class="m-0 text-dark fw-bold webkit">Hello I'm</h4>
+            <h1 class="m-0 text-dark webkit ">Abd-Alrahman Al-Droubi</h1>
+            <p class="fs-4 m-0  text-dark fw-bold webkit">A creative website developer</p>
+            <div class="social mt-2">
+                <a href="https://github.com/abdalrahman-droubi"><img src="./images/211904_social_github_icon.png"
+                        alt="social img"></i></a>
+                <a href="http://linkedin.com/in/abdalrahman-drobi-92a377254"><img
+                        src="./images/104493_linkedin_icon.png" alt="social img"></i></a>
+                <a href=mailto:abdalrahman.drobi@gmail.com><img src="./images/1181205_gmail_google_mail_icon.png"
+                        alt="social img"></i></a>
+            </div>
+        </section>
+        <!--Home text ------ -->
+        <!-- Footer -->
+        <footer>
+            <!-- <div class="footer">
+                © Copyright ©2023 All rights reserved |
+                <a class="" href="http://linkedin.com/in/abdalrahman-drobi-92a377254">My Linkedin</a>
+            </div>
+        </footer> -->
+            <!-- Footer -->
+    </div>
+    <!-- ----------------------------------------page1---------------------------------------------------------------------------------->
+    <!-- ----------------------------------------page2---------------------------------------------------------------------------------->
+    <div class="page2" id="Skills">
+        <div class="container-fluid skills">
+            <h1 class="text-light">MY SKILLS</h1>
+            <br>
+            <div class="row text-light">
+                <div class="col ps-5 skill-list">
+                    <h3>Hard Skills</h3>
+                    <ul>
+                        <li>Web development
+                            <ul>
+                                <li>Html</li>
+                                <li>css</li>
+                            </ul>
+                        </li>
+                        <li>Product Marketing</li>
+                        <li>Sales processing</li>
+                    </ul>
+                </div>
+                <div class="col ps-5 skill-list">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Time mangment</li>
+                        <li>teamwork</li>
+                        <li>Communication</li>
+                        <li>Problem-solving</li>
+                        <li>Flexibility</li>
+                        <li>Collaboration</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <!-- Container wrapper -->
-    </nav>
-    <!-- -----navbar---- -->
-
-    <section class="container-fluid text-center home-text">
-        <h4 class="m-0 text-dark fw-bold">Hello I'm</h4>
-        <h1 class="m-0 text-dark ">Abd-Alrahman Al-Droubi</h1>
-        <p class="fs-4 m-0  text-dark fw-bold">A creative website developer</p>
-        <div class="social mt-2">
-            <a href=""><img src="./images/211904_social_github_icon.png" alt="social img"></i></a>
-            <a href=""><img src="./images/104493_linkedin_icon.png" alt="social img"></i></a>
-            <a href=""><img src="./images/1181205_gmail_google_mail_icon.png" alt="social img"></i></a>
+    </div>
+    <!-- ----------------------------------------page2---------------------------------------------------------------------------------->
+    <!-- ----------------------------------------page3---------------------------------------------------------------------------------->
+    <div class="page3" id="Qualifications">
+        <div class=" container-fluid Qualifications">
+            <h1 class="text-light">Qualification's</h1>
+            <br>
+            <div class="col">
+                <div class="col Qualifications-col"> 2018
+                    <br>
+                    High School Secondry Education
+                </div>
+                <div class="col Qualifications-col">
+                    2018-2022
+                    <br>
+                    Bachelor's Degree of Civil Engineer
+                </div>
+                <div class="col Qualifications-col">
+                    2/2023-9/2023
+                    <br>
+                    web developer training by Orange
+                </div>
+            </div>
         </div>
-        <div class="btn">
-            <a  role="button" href="#">About Me</a>
+    </div>
+    <!-- ----------------------------------------page3---------------------------------------------------------------------------------->
+    <!-- ----------------------------------------page4---------------------------------------------------------------------------------->
+    <div class="page4" id="My Project">
+        <h1 class="text-light My-Project">Qualification's</h1>
+        <br>
+        <div class="container d-flex align-items-center justify-content-center position-relative flex-wrap">
+            <div class="card d-flex position-relative flex-column">
+                <div class='imgContainer'>
+                    <img
+                        src='https://images.pexels.com/photos/1456268/pexels-photo-1456268.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'>
+                </div>
+                <div class="content">
+                    <h2>Card One</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget velit tristique,
+                        sollicitudin leo viverra, suscipit neque. Aliquam ut facilisis urna, in pretium nibh. Morbi in
+                        leo in eros commodo volutpat ac sed dolor.</p>
+                </div>
+            </div>
+            <div class="card d-flex position-relative flex-column">
+                <div class='imgContainer'>
+                    <img
+                        src='https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'>
+                </div>
+                <div class="content">
+                    <h2>Card Two</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget velit tristique,
+                        sollicitudin leo viverra, suscipit neque. Aliquam ut facilisis urna, in pretium nibh. Morbi in
+                        leo in eros commodo volutpat ac sed dolor.</p>
+                </div>
+            </div>
+            <div class="card d-flex position-relative flex-column">
+                <div class='imgContainer'>
+                    <img
+                        src='https://images.pexels.com/photos/847483/pexels-photo-847483.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'>
+                </div>
+                <div class="content">
+                    <h2>Card Three</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget velit tristique,
+                        sollicitudin leo viverra, suscipit neque. Aliquam ut facilisis urna, in pretium nibh. Morbi in
+                        leo in eros commodo volutpat ac sed dolor.</p>
+                </div>
+            </div>
         </div>
-
-    </section>
+    </div>
+    <!-- ----------------------------------------page4---------------------------------------------------------------------------------->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
