@@ -5,17 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>portfolio</title>
     <link rel="stylesheet" href="index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
     <!-- ----------------------------------------page1---------------------------------------------------------------------------------->
     <div class="page1" id="Home">
+        <video video autoplay muted loop class="page1">
+            <source class="page1" src="./images/background.mp4" type="video/mp4">
+        </video>
         <!-- -----navbar---- -->
-        <nav class="navbar navbar-expand-lg navbar-light honav">
+        <nav class="navbar navbar-expand-sm navbar-light honav">
             <!-- Container wrapper -->
             <div class="container-fluid honav">
                 <!-- Toggle button -->
@@ -28,28 +33,24 @@
                 <div class="collapse navbar-collapse" id="navbarLeftAlignExample">
                     <!-- Left links -->
                     <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item col-2 pt-3">
-                            <img class=" w-75 h-75 d-inline-block rounded-4 "
-                                src="./images/abdalrahman-droubi-high-resolution-logo-white-on-transparent-background.png"
-                                alt="my logo">
+                        <li class="nav-item col-2 me-5 ">
+                            <img class=" w-100 h-100 pt-2 d-inline-block rounded-4 "
+                                src="./images/logo.png" alt="my logo">
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link active text-light fs-3 marginnav rounded-4 " aria-current="page"
+                            <a class="nav-link active text-light fs-3 marginnav rounded-4 text-dark" aria-current="page"
                                 href="#Home">Home</a>
                         </li>
-                        <li class="dropdown nav-item ">
-                            <button class="btn  dropdown-toggle text-light fs-3 marginnav rounded-4 " type="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                About Me
-                            </button>
-                            <ul class="dropdown-menu ">
-                                <li><a class="dropdown-item rounded-4" href="#Skills">Skills</a></li>
-                                <li><a class="dropdown-item rounded-4" href="#Qualifications">Qualifications</a></li>
-                                <li><a class="dropdown-item rounded-4" href="#">Experiences</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fs-3 marginnav rounded-4 text-dark" href="#Skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fs-3 marginnav rounded-4 text-dark"
+                                href="#Experiences">Experiences</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link text-light fs-3 marginnav rounded-4 " href="#My Project">My Project</a>
+                            <a class="nav-link text-light fs-3 marginnav rounded-4 text-dark" href="#My Project">My
+                                Project</a>
                         </li>
                     </ul>
                     <!-- Left links -->
@@ -61,9 +62,9 @@
         <!-- -----navbar---- -->
         <!--Home text ------ -->
         <section class="container-fluid text-center home-text ">
-            <h4 class="m-0 text-dark fw-bold webkit">Hello I'm</h4>
-            <h1 class="m-0 text-dark webkit ">Abd-Alrahman Al-Droubi</h1>
-            <p class="fs-4 m-0  text-dark fw-bold webkit">A creative website developer</p>
+            <h4 class=" text-dark fw-bold webkit">Hello I'm</h4>
+            <h1 class=" text-dark webkit fw-bold ">Abd-Alrahman Al-Droubi</h1>
+            <p class="fs-1 mt-2  text-dark fw-bold webkit">A creative website developer</p>
             <div class="social mt-2">
                 <a href="https://github.com/abdalrahman-droubi"><img src="./images/211904_social_github_icon.png"
                         alt="social img"></i></a>
@@ -74,23 +75,16 @@
             </div>
         </section>
         <!--Home text ------ -->
-        <!-- Footer -->
-        <footer>
-            <!-- <div class="footer">
-                © Copyright ©2023 All rights reserved |
-                <a class="" href="http://linkedin.com/in/abdalrahman-drobi-92a377254">My Linkedin</a>
-            </div>
-        </footer> -->
-            <!-- Footer -->
+
     </div>
     <!-- ----------------------------------------page1---------------------------------------------------------------------------------->
     <!-- ----------------------------------------page2---------------------------------------------------------------------------------->
     <div class="page2" id="Skills">
         <div class="container-fluid skills">
-            <h1 class="text-light">MY SKILLS</h1>
+            <h1 class="text-dark">MY SKILLS</h1>
             <br>
             <div class="row text-light">
-                <div class="col ps-5 skill-list">
+                <div class="col ps-5 skill-list" data-aos="fade-right">
                     <h3>Hard Skills</h3>
                     <ul>
                         <li>Web development
@@ -103,7 +97,7 @@
                         <li>Sales processing</li>
                     </ul>
                 </div>
-                <div class="col ps-5 skill-list">
+                <div class="col ps-5 skill-list" data-aos="fade-left" >
                     <h3>Soft Skills</h3>
                     <ul>
                         <li>Time mangment</li>
@@ -119,24 +113,28 @@
     </div>
     <!-- ----------------------------------------page2---------------------------------------------------------------------------------->
     <!-- ----------------------------------------page3---------------------------------------------------------------------------------->
-    <div class="page3" id="Qualifications">
+    <div class="page3" id="Experiences">
         <div class=" container-fluid Qualifications">
-            <h1 class="text-light">Qualification's</h1>
+            <h1 class="text-dark">Experiences</h1>
             <br>
-            <div class="col">
-                <div class="col Qualifications-col"> 2018
+            <div class="col ">
+                <div class="col Qualifications-col" data-aos="zoom-in"> 2018
                     <br>
                     High School Secondry Education
                 </div>
-                <div class="col Qualifications-col">
+                <div class="col Qualifications-col" data-aos="zoom-in">
                     2018-2022
                     <br>
                     Bachelor's Degree of Civil Engineer
+                    <br>
+                    Tafila Technical University
                 </div>
-                <div class="col Qualifications-col">
+                <div class="col Qualifications-col" data-aos="zoom-in">
                     2/2023-9/2023
                     <br>
-                    web developer training by Orange
+                    web developer training 
+                    <br>
+                    by Orange
                 </div>
             </div>
         </div>
@@ -144,16 +142,16 @@
     <!-- ----------------------------------------page3---------------------------------------------------------------------------------->
     <!-- ----------------------------------------page4---------------------------------------------------------------------------------->
     <div class="page4" id="My Project">
-        <h1 class="text-light My-Project">Qualification's</h1>
+        <h1 class="text-dark My-Project">My Project</h1>
         <br>
         <div class="container d-flex align-items-center justify-content-center position-relative flex-wrap">
             <div class="card d-flex position-relative flex-column">
                 <div class='imgContainer'>
                     <img
-                        src='https://images.pexels.com/photos/1456268/pexels-photo-1456268.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'>
+                        src='./images/MD Creating a Project Code.jpg'>
                 </div>
                 <div class="content">
-                    <h2>Card One</h2>
+                    <h2>project name</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget velit tristique,
                         sollicitudin leo viverra, suscipit neque. Aliquam ut facilisis urna, in pretium nibh. Morbi in
                         leo in eros commodo volutpat ac sed dolor.</p>
@@ -162,10 +160,10 @@
             <div class="card d-flex position-relative flex-column">
                 <div class='imgContainer'>
                     <img
-                        src='https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'>
+                        src='./images/9-best-programming-project-ideas-for-beginners-to-level-up-their-coding-skills.webp'>
                 </div>
                 <div class="content">
-                    <h2>Card Two</h2>
+                    <h2>project name</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget velit tristique,
                         sollicitudin leo viverra, suscipit neque. Aliquam ut facilisis urna, in pretium nibh. Morbi in
                         leo in eros commodo volutpat ac sed dolor.</p>
@@ -174,21 +172,34 @@
             <div class="card d-flex position-relative flex-column">
                 <div class='imgContainer'>
                     <img
-                        src='https://images.pexels.com/photos/847483/pexels-photo-847483.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'>
+                        src='./images/download.png'>
                 </div>
                 <div class="content">
-                    <h2>Card Three</h2>
+                    <h2>project name</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget velit tristique,
                         sollicitudin leo viverra, suscipit neque. Aliquam ut facilisis urna, in pretium nibh. Morbi in
                         leo in eros commodo volutpat ac sed dolor.</p>
                 </div>
             </div>
         </div>
+        <!-- Footer  -->
+        <footer>
+            <div class="footer">
+                © Copyright ©2023 All rights reserved |
+                <a class="" href="http://linkedin.com/in/abdalrahman-drobi-92a377254">My Linkedin</a>
+            </div>
+        </footer>
+        <!-- Footer -->
     </div>
     <!-- ----------------------------------------page4---------------------------------------------------------------------------------->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>
