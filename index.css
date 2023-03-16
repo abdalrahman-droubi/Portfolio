@@ -31,10 +31,12 @@ body {
 }
 
 .home-text {
-    background-color: rgba(255, 255, 255, 0.5);
     position: absolute;
-    top: 20rem;
+    top: 20%;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 45% !important;
+    position: relative !important;
+    
 }
 
 .webkit {
@@ -42,6 +44,47 @@ body {
     opacity: 0.9;
     -webkit-text-stroke: 0.1px rgb(255, 255, 255);
 }
+
+/* ------------------------------------------------------------------ */
+.anitext {
+    border-right: solid 3px rgba(0, 255, 0, .75);
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 28px;
+    color: rgba(255, 255, 255, .70);
+}
+
+/* Animation */
+.anitext {
+    animation: animated-text 4s steps(29, end) 1s 1 normal both,
+        animated-cursor 600ms steps(29, end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor {
+    from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+/* -------------------------------------------- */
 
 .social a {
     width: 35px;
@@ -96,13 +139,10 @@ body {
     background-color: #111111;
     padding: 100px 0 150px 0;
     padding-left: 50px;
-    /**/
     padding-right: 50px;
-    /**/
 }
 
 .Qualifications h1 {
-    /* padding-top: 5rem; */
     margin-bottom: 20px !important;
     text-align: center;
 
